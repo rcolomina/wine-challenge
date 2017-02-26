@@ -1,0 +1,17 @@
+1. Explore Red on its own
+2. Explore White on its own
+3. Explore all together
+4. The problem with the usal linear regression is that oftentimes it is too simple and it is unable to capture the complexity of the data. To overcome this one might try adding polynomial features (interaction terms) In a way Stone-Weierstrass theorem says that this makes sense since any continuos function can be approximated by polynomilas. Along the same lines, we have triangulization result that allows us to approximate manifolds by piece-wise linear bits that have the same "structure". 
+    i) Partition the domain (feature space) into pieces (hyperparameter).
+       - This could be done by selecting some k points and considering balls of small radius such that they cover everything.
+    ii) For each locality of points, fit a linear model
+    iii) To make predictions, given new data, find closest locality  and use that model
+        
+    QUESTIONS
+    1) What metric to use to determine close points?
+    1.1) Should we treat red and white differently? Depends on the metric, right?
+    2)
+    
+5. Compare with: std linear regression, ensemble of different methods (KNN, RF, LDA, etc)
+6. Train one model for each wine or one for both?
+
